@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes GradientAnimation {
+  0%{background-position: 0% 50%}
+  50%{background-position: 100% 50%}
+  100%{background-position:0% 50%}
+}
+
+body{
+  /*Dynamic gradient background code here*/
+  background: linear-gradient(60deg, #030084, #015a81, #640099, #04785b);
+  background-size: 2000% 2000%;
+  animation: GradientAnimation 8s ease infinite;
+}
+
+/* Login/Register Form style */
+form{
+  box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  position: center;
+  background-color: white;
+  width: 300px;
+  height: 540px;
+}
+
+/* Login Button style */
+.loginButton{
+  width: 100px;
+}
+
+/* "Dont have an account?" */
+.sign-up-text{
+  font-size: 14px;
+  color: darkgrey;
+}
+
+.dont-have-an-account{
+  font-size: 14px;
+}
+
+
+
