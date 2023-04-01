@@ -1,5 +1,5 @@
 import { Button, Form } from 'react-bootstrap';
-import './App.css';
+import '../styles/App.css';
 import {useNavigate} from "react-router-dom";
 
 function Login() {
