@@ -1,7 +1,15 @@
 import { Button, Form } from 'react-bootstrap';
 import './App.css';
+import {useNavigate} from "react-router-dom";
 
 function Login() {
+
+    const navigate = useNavigate();
+
+    const navigateToLayout= () => {
+        navigate('Layout');
+    }
+
     return (
         <div className={'mb-3 d-flex justify-content-md-center align-items-center vh-100'}>
             <Form>
@@ -25,7 +33,7 @@ function Login() {
 
                 <center>
 
-                    <Button variant="primary" type="submit" className={"mt-4 mb-3 loginButton"}>
+                    <Button variant="primary" type="submit" className={"mt-4 mb-3 loginButton"} onClick={navigateToLayout}>
                         Login
                     </Button>
 
