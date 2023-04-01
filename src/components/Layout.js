@@ -1,11 +1,12 @@
 import Navigtion from "./Navigtion";
+import Watchlist from "./Watchlist";
 
 function Layout(){
     return (
         <div>
             <Navigtion/>
           <center>
-              <h1>Layout Test</h1>
+              <Watchlist/>
           </center>
         </div>
     )
